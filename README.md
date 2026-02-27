@@ -16,3 +16,14 @@ strace ./hello_c
 strace -c ./hello_asm
 strace -c ./hello_c
 strace ./crash
+
+## Key screenshots
+
+### ASM (`strace -c`)
+![ASM strace summary](screenshots/04-strace-hello-asm.png)
+
+### C (`strace -c`)
+![C strace summary](screenshots/05-strace-hello-c.png)
+
+### Crash (`SIGSEGV`)
+![Crash trace](screenshots/07-strace-crash.png)
