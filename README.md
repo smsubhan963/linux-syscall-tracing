@@ -1,6 +1,6 @@
 # Linux System Call Tracing (strace) — ASM vs C
 
-This mini project compares how a tiny **Assembly** program and a simple **C** program interact with Linux at runtime.
+This mini project compares how a tiny **Assembly** program and a simple **C** program interact with Linux at runtime.  
 I used `strace` / `strace -c` to see the system calls each program makes, then wrote a small crash example to observe what happens when a program touches protected memory.
 
 ## What I did
@@ -16,14 +16,15 @@ strace ./hello_c
 strace -c ./hello_asm
 strace -c ./hello_c
 strace ./crash
+```
 
 ## Key screenshots
 
 ### ASM (`strace -c`)
-![ASM strace summary](screenshots/04-strace-hello-asm.png)
+![ASM strace summary](screenshots/04-stracec-hello-asm.png) 
 
 ### C (`strace -c`)
-![C strace summary](screenshots/05-strace-hello-c.png)
+![C strace summary](screenshots/05-stracec-hello-c.png) 
 
 ### Crash (`SIGSEGV`)
 ![Crash trace](screenshots/07-strace-crash.png)
